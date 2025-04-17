@@ -115,16 +115,16 @@ remove_libs:
 args = maps/map_ok.cub
 
 test: all
-	 ./$(NAME) $(args)
+	 ./$(NAME) maps/map.cub
 
 testbonus: $(BONUS_NAME)
-	 ./$(BONUS_NAME) $(args)
+	 ./$(BONUS_NAME) maps/map_bonus.cub
 
 val: all
-	$(VALGRIND) ./$(NAME) $(args)
+	$(VALGRIND) ./$(NAME) maps/map.cub
 
 valbonus: $(BONUS_NAME)
-	$(VALGRIND) ./$(BONUS_NAME) $(args)
+	$(VALGRIND) ./$(BONUS_NAME) maps/map_bonus.cub
 
 .PHONY: download
 
