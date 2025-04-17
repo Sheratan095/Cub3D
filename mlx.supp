@@ -1,0 +1,174 @@
+{
+   X11_LocaleDatabase_StillReachable
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XlcCreateLocaleDataBase
+}
+
+{
+   X11_LocaleCTInfo_StillReachable
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XlcAddCT
+}
+
+{
+   X11_CharsetInfo_StillReachable
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_XlcCreateDefaultCharSet
+}
+
+{
+   X11_StringToQuark_StillReachable
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_XrmInternalStringToQuark
+}
+
+{
+   X11_QuarkMalloc_StillReachable
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XrmInternalStringToQuark
+}
+
+{
+   X11_Dlopen_StillReachable
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_dl_new_object
+}
+
+{
+   X11_DLCheckVersions_StillReachable
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:calloc
+   fun:_dl_check_map_versions
+}
+
+{
+   X11_DlopenStrdup_StillReachable
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:strdup
+   fun:_dl_load_cache_lookup
+}
+
+{
+   X11_XcursorARGB_StillReachable
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:XcursorSupportsARGB
+}
+
+{
+   X11_XrmParseInfo_StillReachable
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XrmInitParseInfo
+}
+{
+   X11_DefaultCharSet_StillReachable
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XlcCreateDefaultCharSet
+   ...
+}
+{
+   X11_AddCharSet_StillReachable
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XlcAddCharSet
+   ...
+}
+{
+   X11_QuarkBlock_StillReachable
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XrmInternalStringToQuark
+   ...
+}
+{
+   X11_XcursorARGB_StillReachable
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:XcursorSupportsARGB
+   ...
+}
+{
+   X11_XcursorBitmapCreate_StillReachable
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:XcursorNoticeCreateBitmap
+   ...
+}
+{
+   X11 still reachable (64 bytes)
+   Memcheck:Leak
+   fun:malloc
+   ...
+   obj:/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+}
+{
+   Xcursor still reachable (8176 bytes)
+   Memcheck:Leak
+   fun:malloc
+   ...
+   obj:/usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+}
+{
+   dl_new_object_leak
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_dl_new_object
+}
+{
+   dlopen_internal_leak
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_dl_map_object
+   fun:dlopen@@GLIBC_2.2.5
+}
+{
+   x11_internal_quark_leak
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XrmInternalStringToQuark
+   fun:XrmInitialize
+   fun:XGetDefault
+}
+{
+   x11_locale_converter
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XlcSetConverter
+   fun:_XlcAddUtf8Converters
+}
+{
+   xcursor_argb_support
+   Memcheck:Leak
+   match-leak-kinds: reachable
+   fun:malloc
+   fun:_XcursorGetDisplayInfo
+   fun:XcursorSupportsARGB
+}
