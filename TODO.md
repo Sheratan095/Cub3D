@@ -1,6 +1,6 @@
 [x] use t_vars *vars instead of t_vars vars in main
 
-[] rendere corekit static in modo da non avere relink
+[] Empty lines in map?
 
 [x] multiple definition of the same asset -> load the last definition
 	=> ora legge tutto il file fino a che non trovo tutti gli asset,
