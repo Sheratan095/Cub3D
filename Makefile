@@ -34,7 +34,7 @@ SRC_BONUS = src/window/minimap_bonus.c \
 	src/window/door_handling_bonus.c \
 
 FLAGS	= -g -O3
-# FLAGS	+= -Wall -Werror -Wextra
+FLAGS	+= -Wall -Werror -Wextra
 # FLAGS	+= -DSTRICT_MODE=0
 
 $(NAME): $(SRC)
